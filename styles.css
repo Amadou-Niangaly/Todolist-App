@@ -132,3 +132,51 @@ body{
     border-radius: 5px;
     margin-left: 2px;
 }
+/* Styles pour les appareils mobiles (par exemple, smartphones) */
+@media only screen and (max-width: 768px) {
+    /* Ajoutez ici vos styles CSS spécifiques pour les appareils mobiles */
+    .ajt-tache {
+        width: 300px;
+        height: 350px;
+        background-color: #EDEDEC;
+        border-radius: 10px;
+        display: flex;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 98; /* Assure que le bouton est derrière le modal */
+        border-radius: 10px;
+    }
+    .modal-content {
+        width: 300px;
+        height: 350px;
+        background-color:#EDEDEC ;
+        border-radius: 10px;
+        padding: 10px 20px; /* Ajout de padding pour que les éléments ne soient pas collés aux bords */
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100; /* Assure que le modal-content est en premier plan */
+    }
+    .btn-ajt {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5A67D8;
+        color: #fff;
+        border-radius: 5px;
+        border-color: #5A67D8;
+        font-size: 20px;
+        width: 200px; /* Ajustez la largeur si nécessaire */
+        height: 50px; /* Ajustez la hauteur si nécessaire */
+        left:50px;
+        top: 5px;
+        margin: auto;
+        order: -1;
+    }
+  }
+  
